@@ -155,24 +155,41 @@ def listPosts(request):
                 user['isAnonymous'] = bool(user['isAnonymous'])
                 cursor = connection.cursor()
                 cursor.execute(
-                    """SELECT email from users WHERE id IN (SELECT follower_id from followers WHERE followee_id = (SELECT id FROM users WHERE email=%s) AND follows=TRUE)""",
+                    """SELECT following_users.email
+                    FROM (users INNER JOIN followers ON users.id = followers.followee_id)
+                    INNER JOIN users AS following_users ON followers.follower_id = following_users.id
+                    WHERE users.email=%s AND followers.follows = TRUE""",
                     (post['user'],))
                 user['followers'] = [item['email'] for item in dictfetchall(cursor)]
                 cursor.close()
 
                 cursor = connection.cursor()
                 cursor.execute(
-                    """SELECT email from users WHERE id IN (SELECT followee_id from followers WHERE follower_id = (SELECT id FROM users WHERE email=%s) AND follows=TRUE)""",
+                    """SELECT followed_users.email
+                    FROM (users INNER JOIN followers ON users.id = followers.follower_id)
+                    INNER JOIN users AS followed_users ON followers.followee_id = followed_users.id
+                    WHERE users.email=%s AND followers.follows = TRUE""",
                     (post['user'],))
                 user['following'] = [item['email'] for item in dictfetchall(cursor)]
                 cursor.close()
 
                 cursor = connection.cursor()
                 cursor.execute(
-                    """SELECT thread_id FROM Subscribtions WHERE user_id = (SELECT id FROM users WHERE email=%s) AND subscribed=TRUE""",
+                    """SELECT subscriptions.thread_id
+                    FROM users INNER JOIN subscriptions ON users.id = subscriptions.user_id
+                    WHERE users.email = %s AND subscribed = TRUE""",
                     (post['user'],))
                 user['subscriptions'] = [item['thread_id'] for item in dictfetchall(cursor)]
                 post['user'] = user
+        if 'forum' in parameters['related']:
+            for post in posts:
+                cursor = connection.cursor()
+                cursor.execute(
+                    """SELECT forums.id AS id, forums.name AS name, forums.short_name as short_name, users.email AS user FROM forums INNER JOIN users ON forums.user_id = users.id WHERE forums.short_name = %s """,
+                    (post['forum'],))
+                forum = dictfetchone(cursor)
+                cursor.close()
+                post['forum'] = forum
         response_json = {
             'code': 0,
             'response': posts,

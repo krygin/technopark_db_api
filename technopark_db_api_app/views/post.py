@@ -19,7 +19,7 @@ def create(request):
         cursor = connection.cursor()
         cursor.execute("""INSERT INTO posts (thread_id, message, date, user_id, isApproved, isHighlighted, isEdited, isSpam, isDeleted, post_id)
                        VALUES ((SELECT threads.id FROM threads INNER JOIN forums ON threads.forum_id = forums.id WHERE forums.short_name = %s AND threads.id = %s), %s, %s, (SELECT id FROM users WHERE email=%s), %s, %s, %s, %s, %s, %s)""",
-                       (parameters['forum'], parameters['thread'], parameters['message'], parameters['date'], parameters['user'], bool(parameters['isApproved']), bool(parameters['isHighlighted']), bool(parameters['isEdited']),bool(parameters['isSpam']), bool(parameters['isDeleted']), parameters['parent'],))
+                       (parameters['forum'], int(parameters['thread']), parameters['message'], parameters['date'], parameters['user'], bool(parameters['isApproved']), bool(parameters['isHighlighted']), bool(parameters['isEdited']),bool(parameters['isSpam']), bool(parameters['isDeleted']), parameters['parent'],))
         connection.commit()
         cursor.close()
 
