@@ -106,7 +106,7 @@ def listPosts(request):
     try:
         parameters = request.GET.dict()
         validate_required_parameters(parameters, ['forum'])
-        validate_optional_parameters(parameters, ['limit', 'order', 'since'], ['0', 'desc', '1000-01-01 00:00:00'])
+        validate_optional_parameters(parameters, ['limit', 'order', 'since', 'related'], ['0', 'desc', '1000-01-01 00:00:00', []])
 
         cursor = connection.cursor()
         if parameters['limit'] != '0':
@@ -193,6 +193,190 @@ def listPosts(request):
         response_json = {
             'code': 0,
             'response': posts,
+        }
+    except Exception as e:
+        response_json = {
+            'code': 1,
+            'response': str(e),
+        }
+    return HttpResponse(json.dumps(response_json, ensure_ascii=False), content_type='application/json')
+
+
+
+def listThreads(request):
+    try:
+        parameters = request.GET.dict()
+        validate_required_parameters(parameters, ['forum'])
+        validate_optional_parameters(parameters, ['limit', 'order', 'since', 'related'], ['0', 'desc', '1000-01-01 00:00:00', []])
+
+        cursor = connection.cursor()
+        if parameters['limit'] != '0':
+            cursor.execute(
+                """SELECT threads.date AS date,
+                threads.dislikes AS dislikes,
+                forums.short_name AS forum,
+                threads.id AS id,
+                threads.isClosed AS isClosed,
+                threads.isDeleted AS isDeleted,
+                threads.likes AS likes,
+                threads.message AS message,
+                (threads.likes - posts.dislikes) AS points,
+                COUNT(posts.id) AS posts,
+                threads.slug AS slug,
+                threads.title AS title, users.email AS user
+                FROM ((forums INNER JOIN threads ON forums.id = threads.forum_id)
+                INNER JOIN users ON threads.user_id = users.id)
+                INNER JOIN posts ON posts.thread_id = thread_id
+                WHERE forums.short_name=%s AND threads.date > %s ORDER BY %s LIMIT %s""", (parameters['forum'], parameters['since'], parameters['order'], parameters['limit'],))
+        else:
+            cursor.execute(
+                """SELECT threads.date AS date,
+                threads.dislikes AS dislikes,
+                forums.short_name AS forum,
+                threads.id AS id,
+                threads.isClosed AS isClosed,
+                threads.isDeleted AS isDeleted,
+                threads.likes AS likes,
+                threads.message AS message,
+                (threads.likes - posts.dislikes) AS points,
+                COUNT(posts.id) AS posts,
+                threads.slug AS slug,
+                threads.title AS title, users.email AS user
+                FROM ((forums INNER JOIN threads ON forums.id = threads.forum_id)
+                INNER JOIN users ON threads.user_id = users.id)
+                INNER JOIN posts ON posts.thread_id = thread_id
+                WHERE forums.short_name=%s AND threads.date > %s ORDER BY %s""", (parameters['forum'], parameters['since'], parameters['order'],))
+        threads = dictfetchall(cursor)
+        cursor.close()
+        for thread in threads:
+            thread['date'] = thread['date'].strftime("%Y-%m-%d %H:%M:%S")
+
+
+        if 'user' in parameters['related']:
+            for thread in threads:
+                cursor = connection.cursor()
+                cursor.execute(
+                    """SELECT about, email, id, isAnonymous, name, username
+                    FROM users
+                    WHERE email=%s""", (thread['user'],))
+                user = dictfetchone(cursor)
+                cursor.close()
+                user['isAnonymous'] = bool(user['isAnonymous'])
+                cursor = connection.cursor()
+                cursor.execute(
+                    """SELECT following_users.email
+                    FROM (users INNER JOIN followers ON users.id = followers.followee_id)
+                    INNER JOIN users AS following_users ON followers.follower_id = following_users.id
+                    WHERE users.email=%s AND followers.follows = TRUE""",
+                    (thread['user'],))
+                user['followers'] = [item['email'] for item in dictfetchall(cursor)]
+                cursor.close()
+
+                cursor = connection.cursor()
+                cursor.execute(
+                    """SELECT followed_users.email
+                    FROM (users INNER JOIN followers ON users.id = followers.follower_id)
+                    INNER JOIN users AS followed_users ON followers.followee_id = followed_users.id
+                    WHERE users.email=%s AND followers.follows = TRUE""",
+                    (thread['user'],))
+                user['following'] = [item['email'] for item in dictfetchall(cursor)]
+                cursor.close()
+
+                cursor = connection.cursor()
+                cursor.execute(
+                    """SELECT subscriptions.thread_id
+                    FROM users INNER JOIN subscriptions ON users.id = subscriptions.user_id
+                    WHERE users.email = %s AND subscribed = TRUE""",
+                    (thread['user'],))
+                user['subscriptions'] = [item['thread_id'] for item in dictfetchall(cursor)]
+                thread['user'] = user
+
+        if 'forum' in parameters['related']:
+            for thread in threads:
+                cursor = connection.cursor()
+                cursor.execute(
+                    """SELECT forums.id AS id, forums.name AS name, forums.short_name as short_name, users.email AS user FROM forums INNER JOIN users ON forums.user_id = users.id WHERE forums.short_name = %s """,
+                    (thread['forum'],))
+                forum = dictfetchone(cursor)
+                cursor.close()
+                thread['forum'] = forum
+        response_json = {
+            'code': 0,
+            'response': threads,
+        }
+    except Exception as e:
+        response_json = {
+            'code': 1,
+            'response': str(e),
+        }
+    return HttpResponse(json.dumps(response_json, ensure_ascii=False), content_type='application/json')
+
+
+def listUsers(request):
+    try:
+        parameters = request.GET.dict()
+        validate_required_parameters(parameters, ['forum'])
+        validate_optional_parameters(parameters, ['limit', 'order', 'since_id'], ['0', 'desc', '0'])
+
+        cursor = connection.cursor()
+        if parameters['limit'] != '0':
+            cursor.execute(
+                """SELECT DISTINCT users.email AS email,
+                users.id AS id,
+                users.isAnonymous AS isAnonymous,
+                users.name AS name,
+                users.username AS username,
+                users.about AS about
+                FROM ((forums INNER JOIN threads ON forums.id = threads.forum_id)
+                INNER JOIN posts ON posts.thread_id = thread_id)
+                INNER JOIN users ON posts.user_id = users.id
+                WHERE forums.short_name=%s AND users.id > %s ORDER BY %s LIMIT %s""", (parameters['forum'], parameters['since_id'], parameters['order'], parameters['limit'],))
+        else:
+            cursor.execute(
+                """SELECT DISTINCT users.email AS email,
+                users.id AS id,
+                users.isAnonymous AS isAnonymous,
+                users.name AS name,
+                users.username AS username,
+                users.about AS about
+                FROM ((forums INNER JOIN threads ON forums.id = threads.forum_id)
+                INNER JOIN posts ON posts.thread_id = thread_id)
+                INNER JOIN users ON posts.user_id = users.id
+                WHERE forums.short_name=%s AND users.id > %s ORDER BY %s""", (parameters['forum'], parameters['since_id'], parameters['order'],))
+        users = dictfetchall(cursor)
+        for user in users:
+            user['isAnonymous'] = bool(user['isAnonymous'])
+            cursor = connection.cursor()
+            cursor.execute(
+                """SELECT following_users.email
+                FROM (users INNER JOIN followers ON users.id = followers.followee_id)
+                INNER JOIN users AS following_users ON followers.follower_id = following_users.id
+                WHERE users.email=%s AND followers.follows = TRUE""",
+                (user['email'],))
+            user['followers'] = [item['email'] for item in dictfetchall(cursor)]
+            cursor.close()
+
+            cursor = connection.cursor()
+            cursor.execute(
+                """SELECT followed_users.email
+                FROM (users INNER JOIN followers ON users.id = followers.follower_id)
+                INNER JOIN users AS followed_users ON followers.followee_id = followed_users.id
+                WHERE users.email=%s AND followers.follows = TRUE""",
+                (user['email'],))
+            user['following'] = [item['email'] for item in dictfetchall(cursor)]
+            cursor.close()
+
+            cursor = connection.cursor()
+            cursor.execute(
+                """SELECT subscriptions.thread_id
+                FROM users INNER JOIN subscriptions ON users.id = subscriptions.user_id
+                WHERE users.email = %s AND subscribed = TRUE""",
+                (user['email'],))
+            user['subscriptions'] = [item['thread_id'] for item in dictfetchall(cursor)]
+
+        response_json = {
+            'code': 0,
+            'response': users,
         }
     except Exception as e:
         response_json = {

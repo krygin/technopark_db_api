@@ -30,6 +30,8 @@ urlpatterns = patterns('',
     url(r'^db/api/forum/create/$', forum.create),
     url(r'^db/api/forum/details/$', forum.details),
     url(r'^db/api/forum/listPosts/$', forum.listPosts),
+    url(r'^db/api/forum/listThreads/$', forum.listThreads),
+    url(r'^db/api/forum/listUsers/$', forum.listUsers),
 
 
     url(r'^db/api/thread/create/$', thread.create),
