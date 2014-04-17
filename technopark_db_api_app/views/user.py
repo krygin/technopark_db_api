@@ -75,7 +75,7 @@ def details(request):
 
         cursor = connection.cursor()
         cursor.execute(
-            """SELECT thread_id FROM Subscribtions WHERE user_id = (SELECT id FROM users WHERE email=%s) AND subscribed=TRUE""",
+            """SELECT thread_id FROM subscribers WHERE user_id = (SELECT id FROM users WHERE email=%s) AND subscribed=TRUE""",
             (parameters['user'],))
         user['subscriptions'] = [item['thread_id'] for item in dictfetchall(cursor)]
         cursor.close()
@@ -128,7 +128,7 @@ def follow(request):
 
         cursor = connection.cursor()
         cursor.execute(
-            """SELECT thread_id FROM Subscribtions WHERE user_id = (SELECT id FROM users WHERE email=%s) AND subscribed=TRUE""",
+            """SELECT thread_id FROM subscribers WHERE user_id = (SELECT id FROM users WHERE email=%s) AND subscribed=TRUE""",
             (parameters['follower'],))
         user['subscriptions'] = [item['thread_id'] for item in dictfetchall(cursor)]
         cursor.close()
@@ -180,7 +180,7 @@ def listFollowers(request):
 
             cursor = connection.cursor()
             cursor.execute(
-                """SELECT thread_id FROM Subscribtions WHERE user_id = (SELECT id FROM users WHERE email=%s) AND subscribed=TRUE""",
+                """SELECT thread_id FROM subscribers WHERE user_id = (SELECT id FROM users WHERE email=%s) AND subscribed=TRUE""",
                 (user['email'],))
             user['subscriptions'] = [item['thread_id'] for item in dictfetchall(cursor)]
             cursor.close()
@@ -232,7 +232,7 @@ def listFollowing(request):
 
             cursor = connection.cursor()
             cursor.execute(
-                """SELECT thread_id FROM Subscribtions WHERE user_id = (SELECT id FROM users WHERE email=%s) AND subscribed=TRUE""",
+                """SELECT thread_id FROM subscribers WHERE user_id = (SELECT id FROM users WHERE email=%s) AND subscribed=TRUE""",
                 (user['email'],))
             user['subscriptions'] = [item['thread_id'] for item in dictfetchall(cursor)]
             cursor.close()
@@ -286,7 +286,7 @@ def unfollow(request):
 
         cursor = connection.cursor()
         cursor.execute(
-            """SELECT thread_id FROM Subscribtions WHERE user_id = (SELECT id FROM users WHERE email=%s) AND subscribed=TRUE""",
+            """SELECT thread_id FROM subscribers WHERE user_id = (SELECT id FROM users WHERE email=%s) AND subscribed=TRUE""",
             (parameters['follower'],))
         user['subscriptions'] = [item['thread_id'] for item in dictfetchall(cursor)]
         cursor.close()
@@ -340,7 +340,7 @@ def updateProfile(request):
 
         cursor = connection.cursor()
         cursor.execute(
-            """SELECT thread_id FROM Subscribtions WHERE user_id = (SELECT id FROM users WHERE email=%s) AND subscribed=TRUE""",
+            """SELECT thread_id FROM subscribers WHERE user_id = (SELECT id FROM users WHERE email=%s) AND subscribed=TRUE""",
             (parameters['user'],))
         user['subscriptions'] = [item['thread_id'] for item in dictfetchall(cursor)]
         cursor.close()
@@ -366,16 +366,15 @@ def listPosts(request):
         cursor = connection.cursor()
         if parameters['limit'] != '0':
             cursor.execute(
-                """SELECT posts.date AS date, posts.dislikes AS dislikes, forums.short_name AS forum, posts.id AS id, posts.isApproved AS isApproved, posts.isDeleted AS isDeleted, posts.isEdited AS isEdited, posts.isHighlighted AS isHighlighted, posts.isSpam AS isSpam, posts.likes AS likes, posts.message AS message, posts_parent.id as parent, (posts.likes - posts.dislikes) AS points, threads.id AS thread, users.email AS user
-                FROM ((((posts INNER JOIN threads ON posts.thread_id = threads.id)
+                """SELECT posts.date AS date, posts.dislikes AS dislikes, forums.short_name AS forum, posts.id AS id, posts.isApproved AS isApproved, posts.isDeleted AS isDeleted, posts.isEdited AS isEdited, posts.isHighlighted AS isHighlighted, posts.isSpam AS isSpam, posts.likes AS likes, posts.message AS message, posts.post_id as parent, (posts.likes - posts.dislikes) AS points, threads.id AS thread, users.email AS user
+                FROM (((posts INNER JOIN threads ON posts.thread_id = threads.id)
                 INNER JOIN forums ON threads.forum_id = forums.id)
                 INNER JOIN users ON posts.user_id = users.id)
-                LEFT JOIN posts AS posts_parent ON posts.post_id = posts_parent.id)
                 WHERE users.email=%s AND posts.date > %s ORDER BY %s LIMIT %s""",
                 (parameters['user'], parameters['since'], parameters['order'], parameters['limit'],))
         else:
             cursor.execute(
-                """SELECT posts.date AS date, posts.dislikes AS dislikes, forums.short_name AS forum, posts.id AS id, posts.isApproved AS isApproved, posts.isDeleted AS isDeleted, posts.isEdited AS isEdited, posts.isHighlighted AS isHighlighted, posts.isSpam AS isSpam, posts.likes AS likes, posts.message AS message, posts_parent.id as parent, (posts.likes - posts.dislikes) AS points, threads.id AS thread, users.email AS user
+                """SELECT posts.date AS date, posts.dislikes AS dislikes, forums.short_name AS forum, posts.id AS id, posts.isApproved AS isApproved, posts.isDeleted AS isDeleted, posts.isEdited AS isEdited, posts.isHighlighted AS isHighlighted, posts.isSpam AS isSpam, posts.likes AS likes, posts.message AS message, posts.post_id as parent, (posts.likes - posts.dislikes) AS points, threads.id AS thread, users.email AS user
                 FROM ((((posts INNER JOIN threads ON posts.thread_id = threads.id)
                 INNER JOIN forums ON threads.forum_id = forums.id)
                 INNER JOIN users ON posts.user_id = users.id)
