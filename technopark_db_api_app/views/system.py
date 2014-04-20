@@ -28,6 +28,9 @@ def clear(request):
         cursor.execute("""TRUNCATE TABLE threads""")
         cursor.close()
         cursor = connection.cursor()
+        cursor.execute("""TRUNCATE TABLE subscribers""")
+        cursor.close()
+        cursor = connection.cursor()
         cursor.execute("""SET FOREIGN_KEY_CHECKS = 0""")
         cursor.close()
         response_json = {
