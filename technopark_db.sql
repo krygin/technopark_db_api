@@ -6,11 +6,11 @@ CREATE SCHEMA IF NOT EXISTS `technopark_db` DEFAULT CHARACTER SET utf8 COLLATE u
 USE `technopark_db` ;
 
 -- -----------------------------------------------------
--- Table `technopark_db`.`Users`
+-- Table `technopark_db`.`users`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `technopark_db`.`Users` ;
+DROP TABLE IF EXISTS `technopark_db`.`users` ;
 
-CREATE TABLE IF NOT EXISTS `technopark_db`.`Users` (
+CREATE TABLE IF NOT EXISTS `technopark_db`.`users` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `username` VARCHAR(32) NULL,
   `email` VARCHAR(32) NOT NULL,
@@ -23,11 +23,11 @@ CREATE TABLE IF NOT EXISTS `technopark_db`.`Users` (
 
 
 -- -----------------------------------------------------
--- Table `technopark_db`.`Forums`
+-- Table `technopark_db`.`forums`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `technopark_db`.`Forums` ;
+DROP TABLE IF EXISTS `technopark_db`.`forums` ;
 
-CREATE TABLE IF NOT EXISTS `technopark_db`.`Forums` (
+CREATE TABLE IF NOT EXISTS `technopark_db`.`forums` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(128) NULL,
   `short_name` VARCHAR(128) NOT NULL,
@@ -38,18 +38,18 @@ CREATE TABLE IF NOT EXISTS `technopark_db`.`Forums` (
   UNIQUE INDEX `id_UNIQUE` (`id` ASC),
   CONSTRAINT `fk_Forums_Users1`
     FOREIGN KEY (`user_id`)
-    REFERENCES `technopark_db`.`Users` (`id`)
+    REFERENCES `technopark_db`.`users` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `technopark_db`.`Threads`
+-- Table `technopark_db`.`threads`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `technopark_db`.`Threads` ;
+DROP TABLE IF EXISTS `technopark_db`.`threads` ;
 
-CREATE TABLE IF NOT EXISTS `technopark_db`.`Threads` (
+CREATE TABLE IF NOT EXISTS `technopark_db`.`threads` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `title` VARCHAR(128) NOT NULL,
   `date` DATETIME NULL,
@@ -67,23 +67,23 @@ CREATE TABLE IF NOT EXISTS `technopark_db`.`Threads` (
   UNIQUE INDEX `id_UNIQUE` (`id` ASC),
   CONSTRAINT `fk_Thread_Users`
     FOREIGN KEY (`user_id`)
-    REFERENCES `technopark_db`.`Users` (`id`)
+    REFERENCES `technopark_db`.`users` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Thread_Forums1`
     FOREIGN KEY (`forum_id`)
-    REFERENCES `technopark_db`.`Forums` (`id`)
+    REFERENCES `technopark_db`.`forums` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `technopark_db`.`Posts`
+-- Table `technopark_db`.`posts`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `technopark_db`.`Posts` ;
+DROP TABLE IF EXISTS `technopark_db`.`posts` ;
 
-CREATE TABLE IF NOT EXISTS `technopark_db`.`Posts` (
+CREATE TABLE IF NOT EXISTS `technopark_db`.`posts` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `date` DATETIME NOT NULL,
   `message` TEXT NULL,
@@ -104,28 +104,28 @@ CREATE TABLE IF NOT EXISTS `technopark_db`.`Posts` (
   UNIQUE INDEX `id_UNIQUE` (`id` ASC),
   CONSTRAINT `fk_Post_Post1`
     FOREIGN KEY (`post_id`)
-    REFERENCES `technopark_db`.`Posts` (`id`)
+    REFERENCES `technopark_db`.`posts` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Post_Users1`
     FOREIGN KEY (`user_id`)
-    REFERENCES `technopark_db`.`Users` (`id`)
+    REFERENCES `technopark_db`.`users` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Post_Thread1`
     FOREIGN KEY (`thread_id`)
-    REFERENCES `technopark_db`.`Threads` (`id`)
+    REFERENCES `technopark_db`.`threads` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `technopark_db`.`Followers`
+-- Table `technopark_db`.`followers`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `technopark_db`.`Followers` ;
+DROP TABLE IF EXISTS `technopark_db`.`followers` ;
 
-CREATE TABLE IF NOT EXISTS `technopark_db`.`Followers` (
+CREATE TABLE IF NOT EXISTS `technopark_db`.`followers` (
   `follower_id` INT NOT NULL,
   `followee_id` INT NOT NULL,
   `follows` TINYINT(1) NOT NULL DEFAULT false,
@@ -133,22 +133,22 @@ CREATE TABLE IF NOT EXISTS `technopark_db`.`Followers` (
   PRIMARY KEY (`followee_id`, `follower_id`),
   CONSTRAINT `fk_Users_has_Users_Users1`
     FOREIGN KEY (`follower_id`)
-    REFERENCES `technopark_db`.`Users` (`id`)
+    REFERENCES `technopark_db`.`users` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Users_has_Users_Users2`
     FOREIGN KEY (`followee_id`)
-    REFERENCES `technopark_db`.`Users` (`id`)
+    REFERENCES `technopark_db`.`users` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table `technopark_db`.`Subscribers`
+-- Table `technopark_db`.`subscribers`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `technopark_db`.`Subscribers` ;
+DROP TABLE IF EXISTS `technopark_db`.`subscribers` ;
 
-CREATE TABLE IF NOT EXISTS `technopark_db`.`Subscribers` (
+CREATE TABLE IF NOT EXISTS `technopark_db`.`subscribers` (
   `subscribed` TINYINT(1) NOT NULL DEFAULT false,
   `user_id` INT NOT NULL,
   `thread_id` INT NOT NULL,
@@ -157,12 +157,12 @@ CREATE TABLE IF NOT EXISTS `technopark_db`.`Subscribers` (
   PRIMARY KEY (`user_id`, `thread_id`),
   CONSTRAINT `fk_Subscriptions_Users1`
     FOREIGN KEY (`user_id`)
-    REFERENCES `technopark_db`.`Users` (`id`)
+    REFERENCES `technopark_db`.`users` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Subscriptions_Threads1`
     FOREIGN KEY (`thread_id`)
-    REFERENCES `technopark_db`.`Threads` (`id`)
+    REFERENCES `technopark_db`.`threads` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
