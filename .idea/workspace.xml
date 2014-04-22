@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="33072b83-bb5b-42f6-b54a-e8ae1420e2c9" name="Default" comment="" />
+    <ignored path="technopark_db_api.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="technopark_db_api" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="forum.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/technopark_db_api_app/views/forum.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="55" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="2108">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forum_queries.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/technopark_db_api_app/queries/forum_queries.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="137" column="0" selection-start="4422" selection-end="4422" vertical-scroll-proportion="0.0" vertical-offset="2329" max-vertical-offset="3944">
+              <folding>
+                <marker date="1398018311547" expanded="true" signature="244:360" placeholder="INSERT INTO ..." />
+                <marker date="1398018311547" expanded="true" signature="323:356" placeholder="SELECT id FR..users..." />
+                <marker date="1398018311547" expanded="true" signature="614:880" placeholder="SELECT forum..." />
+                <marker date="1398018311547" expanded="true" signature="1275:1541" placeholder="SELECT forum..." />
+                <marker date="1398018311547" expanded="true" signature="2125:2976" placeholder="SELECT posts..." />
+                <marker date="1398018311547" expanded="true" signature="4495:5282" placeholder="SELECT threa..." />
+                <marker date="1398018311547" expanded="true" signature="4495:5338" placeholder="SELECT threa..." />
+                <marker date="1398018311547" expanded="true" signature="6488:6972" placeholder="SELECT DISTI..forums..." />
+                <marker date="1398018311547" expanded="true" signature="6488:6968" placeholder="SELECT DISTI..forums..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thread_queries.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/technopark_db_api_app/queries/thread_queries.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="192" column="8" selection-start="6298" selection-end="6298" vertical-scroll-proportion="0.0" vertical-offset="3264" max-vertical-offset="5593">
+              <folding>
+                <marker date="1398019549908" expanded="true" signature="360:448" placeholder="INSERT INTO ..." />
+                <marker date="1398019549908" expanded="true" signature="360:583" placeholder="INSERT INTO ..." />
+                <marker date="1398019549908" expanded="true" signature="477:516" placeholder="SELECT id FR..forums..." />
+                <marker date="1398019549908" expanded="true" signature="534:567" placeholder="SELECT id FR..users..." />
+                <marker date="1398019549908" expanded="true" signature="1021:1455" placeholder="SELECT threa..." />
+                <marker date="1398019549908" expanded="true" signature="1021:1514" placeholder="SELECT threa..." />
+                <marker date="1398019549908" expanded="true" signature="1021:1458" placeholder="SELECT threa..." />
+                <marker date="1398019549908" expanded="true" signature="1021:1578" placeholder="SELECT threa..." />
+                <marker date="1398019549908" expanded="true" signature="2185:2329" placeholder="SELECT * FRO..threads..." />
+                <marker date="1398019549908" expanded="true" signature="2670:3347" placeholder="SELECT threa..." />
+                <marker date="1398019549908" expanded="true" signature="2670:3291" placeholder="SELECT threa..." />
+                <marker date="1398019549908" expanded="true" signature="2670:3405" placeholder="SELECT threa..." />
+                <marker date="1398019549908" expanded="true" signature="2670:3440" placeholder="SELECT threa..." />
+                <marker date="1398019549908" expanded="true" signature="4243:4289" placeholder="UPDATE threa..." />
+                <marker date="1398019549908" expanded="true" signature="4353:4398" placeholder="SELECT id AS..threads..." />
+                <marker date="1398019549908" expanded="true" signature="4353:4420" placeholder="SELECT id AS..threads..." />
+                <marker date="1398019549908" expanded="true" signature="4758:4805" placeholder="UPDATE threa..." />
+                <marker date="1398019549908" expanded="true" signature="4869:4937" placeholder="SELECT id AS..threads..." />
+                <marker date="1398019549908" expanded="true" signature="5278:5326" placeholder="UPDATE threa..." />
+                <marker date="1398019549908" expanded="true" signature="5390:5459" placeholder="SELECT id AS..threads..." />
+                <marker date="1398019549908" expanded="true" signature="5799:5846" placeholder="UPDATE threa..." />
+                <marker date="1398019549908" expanded="true" signature="5910:5978" placeholder="SELECT id AS..threads..." />
+                <marker date="1398019549908" expanded="true" signature="6351:6399" placeholder="UPDATE threa..." />
+                <marker date="1398019549908" expanded="true" signature="6467:6533" placeholder="UPDATE threa..." />
+                <marker date="1398019549908" expanded="true" signature="6467:6521" placeholder="UPDATE threa..." />
+                <marker date="1398019549908" expanded="true" signature="6620:6676" placeholder="SELECT id AS..threads..." />
+                <marker date="1398019549908" expanded="true" signature="6620:6665" placeholder="SELECT id AS..threads..." />
+                <marker date="1398019549908" expanded="true" signature="6961:7017" placeholder="INSERT INTO ..." />
+                <marker date="1398019549908" expanded="true" signature="6961:7123" placeholder="INSERT INTO ..." />
+                <marker date="1398019549908" expanded="true" signature="7042:7077" placeholder="SELECT id FR..users..." />
+                <marker date="1398019549908" expanded="true" signature="7124:7146" placeholder="UPDATE subsc..." />
+                <marker date="1398019549908" expanded="true" signature="7251:7412" placeholder="SELECT threa..." />
+                <marker date="1398019549908" expanded="true" signature="7251:7472" placeholder="SELECT threa..." />
+                <marker date="1398019549908" expanded="true" signature="7251:7564" placeholder="SELECT threa..." />
+                <marker date="1398019549908" expanded="true" signature="7873:8036" placeholder="INSERT INTO ..." />
+                <marker date="1398019549908" expanded="true" signature="7954:7989" placeholder="SELECT id FR..users..." />
+                <marker date="1398019549908" expanded="true" signature="8037:8063" placeholder="UPDATE subsc..." />
+                <marker date="1398019549908" expanded="true" signature="8037:8060" placeholder="UPDATE subsc..." />
+                <marker date="1398019549908" expanded="true" signature="8166:8480" placeholder="SELECT threa..." />
+                <marker date="1398019549908" expanded="true" signature="8789:8886" placeholder="SELECT * FRO..threads..." />
+                <marker date="1398019549908" expanded="true" signature="8843:8883" placeholder="SELECT forum..threads..." />
+                <marker date="1398019549908" expanded="true" signature="9066:9116" placeholder="UPDATE threa..." />
+                <marker date="1398019549908" expanded="true" signature="9385:10219" placeholder="SELECT posts..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thread.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/technopark_db_api_app/views/thread.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="255" column="103" selection-start="7460" selection-end="8771" vertical-scroll-proportion="0.0" vertical-offset="4335" max-vertical-offset="4437">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post_queries.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/technopark_db_api_app/queries/post_queries.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="190" column="0" selection-start="6929" selection-end="6929" vertical-scroll-proportion="0.5457627" vertical-offset="1769" max-vertical-offset="2380">
+              <folding>
+                <element signature="e#260#1120#0" expanded="false" />
+                <element signature="e#1195#2579#0" expanded="false" />
+                <element signature="e#2654#3231#0" expanded="false" />
+                <marker date="1398020340809" expanded="true" signature="415:533" placeholder="INSERT INTO ..." />
+                <marker date="1398020340809" expanded="true" signature="415:560" placeholder="INSERT INTO ..." />
+                <marker date="1398020340809" expanded="true" signature="415:757" placeholder="INSERT INTO ..." />
+                <marker date="1398020340809" expanded="true" signature="561:682" placeholder="SELECT threa..threads..." />
+                <marker date="1398020340809" expanded="true" signature="696:729" placeholder="SELECT id FR..users..." />
+                <marker date="1398020340809" expanded="true" signature="1270:1867" placeholder="SELECT posts..." />
+                <marker date="1398020340809" expanded="true" signature="1270:1802" placeholder="SELECT posts..." />
+                <marker date="1398020340809" expanded="true" signature="1270:1921" placeholder="SELECT posts..." />
+                <marker date="1398020340809" expanded="true" signature="1270:2020" placeholder="SELECT posts..." />
+                <marker date="1398020340809" expanded="true" signature="2729:2867" placeholder="SELECT * FRO..posts..." />
+                <marker date="1398020340809" expanded="true" signature="2729:2808" placeholder="SELECT * FRO..posts..." />
+                <marker date="1398020340809" expanded="true" signature="2729:2921" placeholder="SELECT * FRO..posts..." />
+                <marker date="1398020340809" expanded="true" signature="2729:3020" placeholder="SELECT * FRO..posts..." />
+                <marker date="1398020340809" expanded="true" signature="3348:4212" placeholder="SELECT posts..." />
+                <marker date="1398020340809" expanded="true" signature="3348:4125" placeholder="SELECT posts..." />
+                <marker date="1398020340809" expanded="true" signature="3348:4060" placeholder="SELECT posts..." />
+                <marker date="1398020340809" expanded="true" signature="3348:4179" placeholder="SELECT posts..." />
+                <marker date="1398020340809" expanded="true" signature="5403:5449" placeholder="UPDATE posts..." />
+                <marker date="1398020340809" expanded="true" signature="5513:5578" placeholder="SELECT id AS..posts..." />
+                <marker date="1398020340809" expanded="true" signature="5908:5953" placeholder="UPDATE posts..." />
+                <marker date="1398020340809" expanded="true" signature="6017:6081" placeholder="SELECT id AS..posts..." />
+                <marker date="1398020340809" expanded="true" signature="6449:6495" placeholder="UPDATE posts..." />
+                <marker date="1398020340809" expanded="true" signature="6563:6615" placeholder="UPDATE posts..." />
+                <marker date="1398020340809" expanded="true" signature="6714:6755" placeholder="SELECT id AS..posts..." />
+                <marker date="1398020340809" expanded="true" signature="7026:7065" placeholder="UPDATE posts..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_queries.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/technopark_db_api_app/queries/user_queries.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="269" column="36" selection-start="8720" selection-end="8720" vertical-scroll-proportion="0.0" vertical-offset="4573" max-vertical-offset="5661">
+              <folding>
+                <marker date="1398018295434" expanded="true" signature="236:314" placeholder="SELECT about..users..." />
+                <marker date="1398018295434" expanded="true" signature="236:344" placeholder="SELECT about..users..." />
+                <marker date="1398018295434" expanded="true" signature="902:1007" placeholder="SELECT follo..users..." />
+                <marker date="1398018295434" expanded="true" signature="902:1098" placeholder="SELECT follo..users..." />
+                <marker date="1398018295434" expanded="true" signature="902:1163" placeholder="SELECT follo..users..." />
+                <marker date="1398018295434" expanded="true" signature="1472:1665" placeholder="SELECT follo..users..." />
+                <marker date="1398018295434" expanded="true" signature="1472:1576" placeholder="SELECT follo..users..." />
+                <marker date="1398018295434" expanded="true" signature="1472:1732" placeholder="SELECT follo..users..." />
+                <marker date="1398018295434" expanded="true" signature="1472:1730" placeholder="SELECT follo..." />
+                <marker date="1398018295434" expanded="true" signature="2043:2148" placeholder="SELECT subsc..users..." />
+                <marker date="1398018295434" expanded="true" signature="2043:2208" placeholder="SELECT subsc..users..." />
+                <marker date="1398018295434" expanded="true" signature="2561:2665" placeholder="INSERT INTO ..." />
+                <marker date="1398018295434" expanded="true" signature="2957:3035" placeholder="SELECT about..users..." />
+                <marker date="1398018295434" expanded="true" signature="2957:3065" placeholder="SELECT about..users..." />
+                <marker date="1398018295434" expanded="true" signature="3487:3651" placeholder="INSERT INTO ..." />
+                <marker date="1398018295434" expanded="true" signature="3487:3544" placeholder="INSERT INTO ..." />
+                <marker date="1398018295434" expanded="true" signature="3487:3682" placeholder="INSERT INTO ..." />
+                <marker date="1398018295434" expanded="true" signature="3569:3602" placeholder="SELECT id FR..users..." />
+                <marker date="1398018295434" expanded="true" signature="3608:3641" placeholder="SELECT id FR..users..." />
+                <marker date="1398018295434" expanded="true" signature="3683:3702" placeholder="UPDATE follo..." />
+                <marker date="1398018295434" expanded="true" signature="4006:4063" placeholder="INSERT INTO ..." />
+                <marker date="1398018295434" expanded="true" signature="4006:4172" placeholder="INSERT INTO ..." />
+                <marker date="1398018295434" expanded="true" signature="4006:4204" placeholder="INSERT INTO ..." />
+                <marker date="1398018295434" expanded="true" signature="4088:4121" placeholder="SELECT id FR..users..." />
+                <marker date="1398018295434" expanded="true" signature="4127:4160" placeholder="SELECT id FR..users..." />
+                <marker date="1398018295434" expanded="true" signature="4205:4228" placeholder="UPDATE follo..." />
+                <marker date="1398018295434" expanded="true" signature="4205:4225" placeholder="UPDATE follo..." />
+                <marker date="1398018295434" expanded="true" signature="4528:5052" placeholder="SELECT DISTI..users..." />
+                <marker date="1398018295434" expanded="true" signature="4528:4985" placeholder="SELECT follo..users..." />
+                <marker date="1398018295434" expanded="true" signature="4528:4897" placeholder="SELECT follo..." />
+                <marker date="1398018295434" expanded="true" signature="4528:5084" placeholder="SELECT follo..users..." />
+                <marker date="1398018295434" expanded="true" signature="4528:5053" placeholder="SELECT follo..users..." />
+                <marker date="1398018295434" expanded="true" signature="5888:6256" placeholder="SELECT follo..users..." />
+                <marker date="1398018295434" expanded="true" signature="5888:6345" placeholder="SELECT follo..users..." />
+                <marker date="1398018295434" expanded="true" signature="5888:6412" placeholder="SELECT follo..users..." />
+                <marker date="1398018295434" expanded="true" signature="7199:7222" placeholder="SELECT * fro..users..." />
+                <marker date="1398018295434" expanded="true" signature="7199:7223" placeholder="SELECT * fro..users..." />
+                <marker date="1398018295434" expanded="true" signature="7224:7271" placeholder="UPDATE users..." />
+                <marker date="1398018295434" expanded="true" signature="7566:8414" placeholder="SELECT posts..." />
+                <marker date="1398018295434" expanded="true" signature="7566:8411" placeholder="SELECT posts..." />
+                <marker date="1398018295434" expanded="true" signature="7566:8377" placeholder="SELECT posts..." />
+                <marker date="1398018295434" expanded="true" signature="7566:8258" placeholder="SELECT posts..." />
+                <marker date="1398018295434" expanded="true" signature="9349:10110" placeholder="SELECT threa..." />
+                <marker date="1398018295434" expanded="true" signature="9349:10168" placeholder="SELECT threa..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/technopark_db_api/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="47" selection-start="1932" selection-end="1932" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="1071">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/technopark_db_api_app/views/post.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="129" column="12" selection-start="4304" selection-end="4304" vertical-scroll-proportion="0.0" vertical-offset="2008" max-vertical-offset="3060">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/technopark_db_api_app/views/user.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="177" column="103" selection-start="5675" selection-end="5978" vertical-scroll-proportion="0.0" vertical-offset="3009" max-vertical-offset="3111">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="system.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/technopark_db_api_app/views/system.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="52" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="850">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/technopark_db_api_app/entities/post.py" />
+        <option value="$PROJECT_DIR$/technopark_db_api_app/entities/thread.py" />
+        <option value="$PROJECT_DIR$/technopark_db_api_app/entities/forum.py" />
+        <option value="$PROJECT_DIR$/technopark_db_api_app/entities/user.py" />
+        <option value="$PROJECT_DIR$/technopark_db_api_app/urls.py" />
+        <option value="C:/Python27/Lib/site-packages/django/views/decorators/csrf.py" />
+        <option value="$PROJECT_DIR$/technopark_db_api/settings.py" />
+        <option value="$PROJECT_DIR$/technopark_db_api_app/views.py" />
+        <option value="$PROJECT_DIR$/technopark_db_api_app/queries/user.py" />
+        <option value="$PROJECT_DIR$/technopark_db_api_app/functions.py" />
+        <option value="$PROJECT_DIR$/technopark_db_api_app/views/system.py" />
+        <option value="$PROJECT_DIR$/technopark_db_api_app/views/user.py" />
+        <option value="$PROJECT_DIR$/technopark_db_api_app/views/forum.py" />
+        <option value="$PROJECT_DIR$/technopark_db_api/urls.py" />
+        <option value="$PROJECT_DIR$/technopark_db_api_app/views/thread.py" />
+        <option value="$PROJECT_DIR$/technopark_db_api_app/queries/user_queries.py" />
+        <option value="$PROJECT_DIR$/technopark_db_api_app/queries/forum_queries.py" />
+        <option value="$PROJECT_DIR$/technopark_db_api_app/queries/thread_queries.py" />
+        <option value="$PROJECT_DIR$/technopark_db_api_app/queries/post_queries.py" />
+        <option value="$PROJECT_DIR$/technopark_db_api_app/views/post.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="technopark_db_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="technopark_db_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="technopark_db_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="technopark_db_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="technopark_db_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="technopark_db_api_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="technopark_db_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="technopark_db_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="technopark_db_api_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="technopark_db_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="technopark_db_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="technopark_db_api_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="queries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="technopark_db_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="technopark_db_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="technopark_db_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="last_opened_file_path" value="C:/Python27/python.exe" />
+    <property name="FullScreen" value="false" />
+    <property name="LayoutCode.rearrangeEntriesPython" value="false" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings />
+    </option>
+  </component>
+  <component name="RunManager" selected="Django server.technopark_db_api">
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="technopark_db_api" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="technopark_db_api" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="technopark_db_api" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="technopark_db_api" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="technopark_db_api" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="technopark_db_api" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="technopark_db_api" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="technopark_db_api" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="technopark_db_api" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="technopark_db_api.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="technopark_db_api" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Django server.technopark_db_api" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="33072b83-bb5b-42f6-b54a-e8ae1420e2c9" name="Default" comment="" />
+      <created>1396894014989</created>
+      <updated>1396894014989</updated>
+    </task>
+    <task id="LOCAL-00001" summary="user + forum">
+      <created>1397576779685</created>
+      <updated>1397576779685</updated>
+    </task>
+    <task id="LOCAL-00002" summary="user + forum">
+      <created>1397593604780</created>
+      <updated>1397593604780</updated>
+    </task>
+    <task id="LOCAL-00003" summary="All hard">
+      <created>1397742748994</created>
+      <updated>1397742748994</updated>
+    </task>
+    <task id="LOCAL-00004" summary="All hard">
+      <created>1398020536204</created>
+      <updated>1398020536204</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3316252" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34850863" sideWeight="0.73572475" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36577708" sideWeight="0.26427525" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24018839" sideWeight="0.6778917" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.62166405" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="user + forum" />
+    <MESSAGE value="All hard" />
+    <option name="LAST_COMMIT_MESSAGE" value="All hard" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="114" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/technopark_db_api_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technopark_db_api_app/views/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="0" selection-start="2471" selection-end="2471" vertical-scroll-proportion="0.0" vertical-offset="1207" max-vertical-offset="1411">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technopark_db_api_app/functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="595" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/views/decorators/csrf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1071" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="0" selection-start="4537" selection-end="4537" vertical-scroll-proportion="0.0" vertical-offset="1921" max-vertical-offset="5032" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/views/decorators/csrf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="1071" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="0" selection-start="4537" selection-end="4537" vertical-scroll-proportion="0.0" vertical-offset="1921" max-vertical-offset="5032" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/views/decorators/csrf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="1105" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="0" selection-start="4537" selection-end="4537" vertical-scroll-proportion="0.0" vertical-offset="1921" max-vertical-offset="5032" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/views/decorators/csrf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="1105" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="0" selection-start="4537" selection-end="4537" vertical-scroll-proportion="0.0" vertical-offset="1921" max-vertical-offset="5032" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/views/decorators/csrf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="1105" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="199" column="0" selection-start="8709" selection-end="8709" vertical-scroll-proportion="0.0" vertical-offset="3383" max-vertical-offset="5032" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python33/Lib/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="857" column="0" selection-start="29620" selection-end="29620" vertical-scroll-proportion="0.33333334" vertical-offset="14406" max-vertical-offset="22032" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python33/Lib/socketserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="610" column="0" selection-start="19653" selection-end="19653" vertical-scroll-proportion="0.33333334" vertical-offset="10190" max-vertical-offset="12699" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python33/Lib/wsgiref/simple_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="72" selection-start="3716" selection-end="3720" vertical-scroll-proportion="-0.019607844" vertical-offset="1945" max-vertical-offset="2720" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python33/Lib/wsgiref/handlers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="0" selection-start="5647" selection-end="5647" vertical-scroll-proportion="0.3137255" vertical-offset="2166" max-vertical-offset="9350" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python33/Lib/site-packages/django/contrib/staticfiles/handlers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="0" selection-start="2298" selection-end="2298" vertical-scroll-proportion="0.61904764" vertical-offset="782" max-vertical-offset="1139" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python33/Lib/site-packages/django/core/servers/basehttp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="0" selection-start="4483" selection-end="4483" vertical-scroll-proportion="0.3137255" vertical-offset="1775" max-vertical-offset="2737" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python33/Lib/site-packages/django/core/handlers/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="214" column="0" selection-start="7646" selection-end="7646" vertical-scroll-proportion="0.6666667" vertical-offset="3162" max-vertical-offset="3519" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python33/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="206" column="0" selection-start="9145" selection-end="9145" vertical-scroll-proportion="0.3110465" vertical-offset="3140" max-vertical-offset="4777" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python33/Lib/site-packages/django/views/decorators/csrf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.5714286" vertical-offset="714" max-vertical-offset="1071" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python33/Lib/site-packages/django/db/backends/mysql/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="323" selection-end="323" vertical-scroll-proportion="0.33333334" vertical-offset="68" max-vertical-offset="9061" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technopark_db_api_app/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/conf/urls/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="0" selection-start="2542" selection-end="2542" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="1105" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/contrib/staticfiles/handlers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="0" selection-start="2298" selection-end="2298" vertical-scroll-proportion="2.985119" vertical-offset="0" max-vertical-offset="1139" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="214" column="0" selection-start="7646" selection-end="7646" vertical-scroll-proportion="0.6666667" vertical-offset="3162" max-vertical-offset="3519" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/utils/importlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="1351" selection-end="1351" vertical-scroll-proportion="0.6666667" vertical-offset="408" max-vertical-offset="765" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/core/urlresolvers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="345" column="0" selection-start="13414" selection-end="13414" vertical-scroll-proportion="0.33139536" vertical-offset="5496" max-vertical-offset="9639" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/db/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="0" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.28502417" vertical-offset="919" max-vertical-offset="4692" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technopark_db_api_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technopark_db_api_app/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technopark_db_api/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technopark_db_api/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="5" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.18472469" vertical-offset="1018" max-vertical-offset="1581" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="0" selection-start="4537" selection-end="4537" vertical-scroll-proportion="4.653631" vertical-offset="0" max-vertical-offset="4777" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/views/decorators/csrf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.58760107" vertical-offset="700" max-vertical-offset="1071" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/MySQLdb/cursors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="350" column="48" selection-start="11569" selection-end="11578" vertical-scroll-proportion="0.33333334" vertical-offset="5825" max-vertical-offset="9282" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/db/backends/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="0" selection-start="2419" selection-end="2419" vertical-scroll-proportion="-0.45822102" vertical-offset="1326" max-vertical-offset="2975" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/db/backends/mysql/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="0" selection-start="5105" selection-end="5105" vertical-scroll-proportion="-0.22911051" vertical-offset="2091" max-vertical-offset="9061" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technopark_db_api_app/functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="14" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0" vertical-offset="188" max-vertical-offset="680" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technopark_db_api_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technopark_db_api_app/views/system.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="52" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technopark_db_api_app/views/forum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="55" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1581">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technopark_db_api_app/views/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="177" column="103" selection-start="5675" selection-end="5978" vertical-scroll-proportion="0.0" vertical-offset="1878" max-vertical-offset="2448">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technopark_db_api_app/views/thread.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="255" column="103" selection-start="7460" selection-end="8771" vertical-scroll-proportion="0.0" vertical-offset="1825" max-vertical-offset="2193">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technopark_db_api_app/queries/forum_queries.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="0" selection-start="4422" selection-end="4422" vertical-scroll-proportion="0.0" vertical-offset="2190" max-vertical-offset="3927">
+          <folding>
+            <marker date="1398018311547" expanded="true" signature="244:360" placeholder="INSERT INTO ..." />
+            <marker date="1398018311547" expanded="true" signature="323:356" placeholder="SELECT id FR..users..." />
+            <marker date="1398018311547" expanded="true" signature="614:880" placeholder="SELECT forum..." />
+            <marker date="1398018311547" expanded="true" signature="1275:1541" placeholder="SELECT forum..." />
+            <marker date="1398018311547" expanded="true" signature="2125:2976" placeholder="SELECT posts..." />
+            <marker date="1398018311547" expanded="true" signature="4495:5282" placeholder="SELECT threa..." />
+            <marker date="1398018311547" expanded="true" signature="4495:5338" placeholder="SELECT threa..." />
+            <marker date="1398018311547" expanded="true" signature="6488:6972" placeholder="SELECT DISTI..forums..." />
+            <marker date="1398018311547" expanded="true" signature="6488:6968" placeholder="SELECT DISTI..forums..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technopark_db_api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="47" selection-start="1932" selection-end="1932" vertical-scroll-proportion="0.0" vertical-offset="584" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technopark_db_api_app/queries/thread_queries.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="192" column="8" selection-start="6298" selection-end="6298" vertical-scroll-proportion="0.0" vertical-offset="4387" max-vertical-offset="5576">
+          <folding>
+            <marker date="1398019549908" expanded="true" signature="360:448" placeholder="INSERT INTO ..." />
+            <marker date="1398019549908" expanded="true" signature="360:583" placeholder="INSERT INTO ..." />
+            <marker date="1398019549908" expanded="true" signature="477:516" placeholder="SELECT id FR..forums..." />
+            <marker date="1398019549908" expanded="true" signature="534:567" placeholder="SELECT id FR..users..." />
+            <marker date="1398019549908" expanded="true" signature="1021:1455" placeholder="SELECT threa..." />
+            <marker date="1398019549908" expanded="true" signature="1021:1514" placeholder="SELECT threa..." />
+            <marker date="1398019549908" expanded="true" signature="1021:1458" placeholder="SELECT threa..." />
+            <marker date="1398019549908" expanded="true" signature="1021:1578" placeholder="SELECT threa..." />
+            <marker date="1398019549908" expanded="true" signature="2185:2329" placeholder="SELECT * FRO..threads..." />
+            <marker date="1398019549908" expanded="true" signature="2670:3347" placeholder="SELECT threa..." />
+            <marker date="1398019549908" expanded="true" signature="2670:3291" placeholder="SELECT threa..." />
+            <marker date="1398019549908" expanded="true" signature="2670:3405" placeholder="SELECT threa..." />
+            <marker date="1398019549908" expanded="true" signature="2670:3440" placeholder="SELECT threa..." />
+            <marker date="1398019549908" expanded="true" signature="4243:4289" placeholder="UPDATE threa..." />
+            <marker date="1398019549908" expanded="true" signature="4353:4398" placeholder="SELECT id AS..threads..." />
+            <marker date="1398019549908" expanded="true" signature="4353:4420" placeholder="SELECT id AS..threads..." />
+            <marker date="1398019549908" expanded="true" signature="4758:4805" placeholder="UPDATE threa..." />
+            <marker date="1398019549908" expanded="true" signature="4869:4937" placeholder="SELECT id AS..threads..." />
+            <marker date="1398019549908" expanded="true" signature="5278:5326" placeholder="UPDATE threa..." />
+            <marker date="1398019549908" expanded="true" signature="5390:5459" placeholder="SELECT id AS..threads..." />
+            <marker date="1398019549908" expanded="true" signature="5799:5846" placeholder="UPDATE threa..." />
+            <marker date="1398019549908" expanded="true" signature="5910:5978" placeholder="SELECT id AS..threads..." />
+            <marker date="1398019549908" expanded="true" signature="6351:6399" placeholder="UPDATE threa..." />
+            <marker date="1398019549908" expanded="true" signature="6467:6533" placeholder="UPDATE threa..." />
+            <marker date="1398019549908" expanded="true" signature="6467:6521" placeholder="UPDATE threa..." />
+            <marker date="1398019549908" expanded="true" signature="6620:6676" placeholder="SELECT id AS..threads..." />
+            <marker date="1398019549908" expanded="true" signature="6620:6665" placeholder="SELECT id AS..threads..." />
+            <marker date="1398019549908" expanded="true" signature="6961:7017" placeholder="INSERT INTO ..." />
+            <marker date="1398019549908" expanded="true" signature="6961:7123" placeholder="INSERT INTO ..." />
+            <marker date="1398019549908" expanded="true" signature="7042:7077" placeholder="SELECT id FR..users..." />
+            <marker date="1398019549908" expanded="true" signature="7124:7146" placeholder="UPDATE subsc..." />
+            <marker date="1398019549908" expanded="true" signature="7251:7412" placeholder="SELECT threa..." />
+            <marker date="1398019549908" expanded="true" signature="7251:7472" placeholder="SELECT threa..." />
+            <marker date="1398019549908" expanded="true" signature="7251:7564" placeholder="SELECT threa..." />
+            <marker date="1398019549908" expanded="true" signature="7873:8036" placeholder="INSERT INTO ..." />
+            <marker date="1398019549908" expanded="true" signature="7954:7989" placeholder="SELECT id FR..users..." />
+            <marker date="1398019549908" expanded="true" signature="8037:8063" placeholder="UPDATE subsc..." />
+            <marker date="1398019549908" expanded="true" signature="8037:8060" placeholder="UPDATE subsc..." />
+            <marker date="1398019549908" expanded="true" signature="8166:8480" placeholder="SELECT threa..." />
+            <marker date="1398019549908" expanded="true" signature="8789:8886" placeholder="SELECT * FRO..threads..." />
+            <marker date="1398019549908" expanded="true" signature="8843:8883" placeholder="SELECT forum..threads..." />
+            <marker date="1398019549908" expanded="true" signature="9066:9116" placeholder="UPDATE threa..." />
+            <marker date="1398019549908" expanded="true" signature="9385:10219" placeholder="SELECT posts..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technopark_db_api_app/queries/user_queries.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="269" column="36" selection-start="8720" selection-end="8720" vertical-scroll-proportion="0.0" vertical-offset="3729" max-vertical-offset="5627">
+          <folding>
+            <marker date="1398018295434" expanded="true" signature="236:314" placeholder="SELECT about..users..." />
+            <marker date="1398018295434" expanded="true" signature="236:344" placeholder="SELECT about..users..." />
+            <marker date="1398018295434" expanded="true" signature="902:1007" placeholder="SELECT follo..users..." />
+            <marker date="1398018295434" expanded="true" signature="902:1098" placeholder="SELECT follo..users..." />
+            <marker date="1398018295434" expanded="true" signature="902:1163" placeholder="SELECT follo..users..." />
+            <marker date="1398018295434" expanded="true" signature="1472:1665" placeholder="SELECT follo..users..." />
+            <marker date="1398018295434" expanded="true" signature="1472:1576" placeholder="SELECT follo..users..." />
+            <marker date="1398018295434" expanded="true" signature="1472:1732" placeholder="SELECT follo..users..." />
+            <marker date="1398018295434" expanded="true" signature="1472:1730" placeholder="SELECT follo..." />
+            <marker date="1398018295434" expanded="true" signature="2043:2148" placeholder="SELECT subsc..users..." />
+            <marker date="1398018295434" expanded="true" signature="2043:2208" placeholder="SELECT subsc..users..." />
+            <marker date="1398018295434" expanded="true" signature="2561:2665" placeholder="INSERT INTO ..." />
+            <marker date="1398018295434" expanded="true" signature="2957:3035" placeholder="SELECT about..users..." />
+            <marker date="1398018295434" expanded="true" signature="2957:3065" placeholder="SELECT about..users..." />
+            <marker date="1398018295434" expanded="true" signature="3487:3651" placeholder="INSERT INTO ..." />
+            <marker date="1398018295434" expanded="true" signature="3487:3544" placeholder="INSERT INTO ..." />
+            <marker date="1398018295434" expanded="true" signature="3487:3682" placeholder="INSERT INTO ..." />
+            <marker date="1398018295434" expanded="true" signature="3569:3602" placeholder="SELECT id FR..users..." />
+            <marker date="1398018295434" expanded="true" signature="3608:3641" placeholder="SELECT id FR..users..." />
+            <marker date="1398018295434" expanded="true" signature="3683:3702" placeholder="UPDATE follo..." />
+            <marker date="1398018295434" expanded="true" signature="4006:4063" placeholder="INSERT INTO ..." />
+            <marker date="1398018295434" expanded="true" signature="4006:4172" placeholder="INSERT INTO ..." />
+            <marker date="1398018295434" expanded="true" signature="4006:4204" placeholder="INSERT INTO ..." />
+            <marker date="1398018295434" expanded="true" signature="4088:4121" placeholder="SELECT id FR..users..." />
+            <marker date="1398018295434" expanded="true" signature="4127:4160" placeholder="SELECT id FR..users..." />
+            <marker date="1398018295434" expanded="true" signature="4205:4228" placeholder="UPDATE follo..." />
+            <marker date="1398018295434" expanded="true" signature="4205:4225" placeholder="UPDATE follo..." />
+            <marker date="1398018295434" expanded="true" signature="4528:5052" placeholder="SELECT DISTI..users..." />
+            <marker date="1398018295434" expanded="true" signature="4528:4985" placeholder="SELECT follo..users..." />
+            <marker date="1398018295434" expanded="true" signature="4528:4897" placeholder="SELECT follo..." />
+            <marker date="1398018295434" expanded="true" signature="4528:5084" placeholder="SELECT follo..users..." />
+            <marker date="1398018295434" expanded="true" signature="4528:5053" placeholder="SELECT follo..users..." />
+            <marker date="1398018295434" expanded="true" signature="5888:6256" placeholder="SELECT follo..users..." />
+            <marker date="1398018295434" expanded="true" signature="5888:6345" placeholder="SELECT follo..users..." />
+            <marker date="1398018295434" expanded="true" signature="5888:6412" placeholder="SELECT follo..users..." />
+            <marker date="1398018295434" expanded="true" signature="7199:7222" placeholder="SELECT * fro..users..." />
+            <marker date="1398018295434" expanded="true" signature="7199:7223" placeholder="SELECT * fro..users..." />
+            <marker date="1398018295434" expanded="true" signature="7224:7271" placeholder="UPDATE users..." />
+            <marker date="1398018295434" expanded="true" signature="7566:8414" placeholder="SELECT posts..." />
+            <marker date="1398018295434" expanded="true" signature="7566:8411" placeholder="SELECT posts..." />
+            <marker date="1398018295434" expanded="true" signature="7566:8377" placeholder="SELECT posts..." />
+            <marker date="1398018295434" expanded="true" signature="7566:8258" placeholder="SELECT posts..." />
+            <marker date="1398018295434" expanded="true" signature="9349:10110" placeholder="SELECT threa..." />
+            <marker date="1398018295434" expanded="true" signature="9349:10168" placeholder="SELECT threa..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technopark_db_api_app/views/post.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="12" selection-start="4304" selection-end="4304" vertical-scroll-proportion="0.0" vertical-offset="2008" max-vertical-offset="3060">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technopark_db_api_app/queries/post_queries.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="190" column="0" selection-start="6929" selection-end="6929" vertical-scroll-proportion="0.5457627" vertical-offset="1769" max-vertical-offset="2380">
+          <folding>
+            <element signature="e#260#1120#0" expanded="false" />
+            <element signature="e#1195#2579#0" expanded="false" />
+            <element signature="e#2654#3231#0" expanded="false" />
+            <marker date="1398020340809" expanded="true" signature="415:533" placeholder="INSERT INTO ..." />
+            <marker date="1398020340809" expanded="true" signature="415:560" placeholder="INSERT INTO ..." />
+            <marker date="1398020340809" expanded="true" signature="415:757" placeholder="INSERT INTO ..." />
+            <marker date="1398020340809" expanded="true" signature="561:682" placeholder="SELECT threa..threads..." />
+            <marker date="1398020340809" expanded="true" signature="696:729" placeholder="SELECT id FR..users..." />
+            <marker date="1398020340809" expanded="true" signature="1270:1867" placeholder="SELECT posts..." />
+            <marker date="1398020340809" expanded="true" signature="1270:1802" placeholder="SELECT posts..." />
+            <marker date="1398020340809" expanded="true" signature="1270:1921" placeholder="SELECT posts..." />
+            <marker date="1398020340809" expanded="true" signature="1270:2020" placeholder="SELECT posts..." />
+            <marker date="1398020340809" expanded="true" signature="2729:2867" placeholder="SELECT * FRO..posts..." />
+            <marker date="1398020340809" expanded="true" signature="2729:2808" placeholder="SELECT * FRO..posts..." />
+            <marker date="1398020340809" expanded="true" signature="2729:2921" placeholder="SELECT * FRO..posts..." />
+            <marker date="1398020340809" expanded="true" signature="2729:3020" placeholder="SELECT * FRO..posts..." />
+            <marker date="1398020340809" expanded="true" signature="3348:4212" placeholder="SELECT posts..." />
+            <marker date="1398020340809" expanded="true" signature="3348:4125" placeholder="SELECT posts..." />
+            <marker date="1398020340809" expanded="true" signature="3348:4060" placeholder="SELECT posts..." />
+            <marker date="1398020340809" expanded="true" signature="3348:4179" placeholder="SELECT posts..." />
+            <marker date="1398020340809" expanded="true" signature="5403:5449" placeholder="UPDATE posts..." />
+            <marker date="1398020340809" expanded="true" signature="5513:5578" placeholder="SELECT id AS..posts..." />
+            <marker date="1398020340809" expanded="true" signature="5908:5953" placeholder="UPDATE posts..." />
+            <marker date="1398020340809" expanded="true" signature="6017:6081" placeholder="SELECT id AS..posts..." />
+            <marker date="1398020340809" expanded="true" signature="6449:6495" placeholder="UPDATE posts..." />
+            <marker date="1398020340809" expanded="true" signature="6563:6615" placeholder="UPDATE posts..." />
+            <marker date="1398020340809" expanded="true" signature="6714:6755" placeholder="SELECT id AS..posts..." />
+            <marker date="1398020340809" expanded="true" signature="7026:7065" placeholder="UPDATE posts..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+
