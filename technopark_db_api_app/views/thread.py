@@ -13,7 +13,7 @@ __author__ = 'Ivan'
 @csrf_exempt
 def create(request):
     try:
-        parameters = request.POST.dict()
+        parameters = json.loads(request.body, encoding='utf-8')
         validate_required_parameters(parameters, ['forum', 'title', 'isClosed', 'user', 'date', 'message', 'slug'])
         validate_optional_parameters(parameters, ['isDeleted'], [False])
 
@@ -61,7 +61,7 @@ def details(request):
 @csrf_exempt
 def close(request):
     try:
-        parameters = request.POST.dict()
+        parameters = json.loads(request.body, encoding='utf-8')
         validate_required_parameters(parameters, ['thread'])
         thread = thread_queries.closeThread(parameters['thread'])
         response_json = {
@@ -79,7 +79,7 @@ def close(request):
 @csrf_exempt
 def open(request):
     try:
-        parameters = request.POST.dict()
+        parameters = json.loads(request.body, encoding='utf-8')
         validate_required_parameters(parameters, ['thread'])
         thread = thread_queries.openThread(parameters['thread'])
         response_json = {
@@ -97,7 +97,7 @@ def open(request):
 @csrf_exempt
 def restore(request):
     try:
-        parameters = request.POST.dict()
+        parameters = json.loads(request.body, encoding='utf-8')
         validate_required_parameters(parameters, ['thread'])
         thread = thread_queries.restoreThread(parameters['thread'])
         response_json = {
@@ -115,7 +115,7 @@ def restore(request):
 @csrf_exempt
 def remove(request):
     try:
-        parameters = request.POST.dict()
+        parameters = json.loads(request.body, encoding='utf-8')
         validate_required_parameters(parameters, ['thread'])
         thread = thread_queries.removeThread(parameters['thread'])
         response_json = {
@@ -133,7 +133,7 @@ def remove(request):
 @csrf_exempt
 def vote(request):
     try:
-        parameters = request.POST.dict()
+        parameters = json.loads(request.body, encoding='utf-8')
         validate_required_parameters(parameters, ['thread', 'vote'])
         thread = thread_queries.voteThread(parameters['thread'], parameters['vote'])
         response_json = {
@@ -151,7 +151,7 @@ def vote(request):
 @csrf_exempt
 def subscribe(request):
     try:
-        parameters = request.POST.dict()
+        parameters = json.loads(request.body, encoding='utf-8')
         validate_required_parameters(parameters, ['user', 'thread'])
         subscription = thread_queries.subscribeThread(parameters['user'], parameters['thread'])
 
@@ -170,7 +170,7 @@ def subscribe(request):
 @csrf_exempt
 def unsubscribe(request):
     try:
-        parameters = request.POST.dict()
+        parameters = json.loads(request.body, encoding='utf-8')
         validate_required_parameters(parameters, ['user', 'thread'])
         subscription = thread_queries.unsubscribeThread(parameters['user'], parameters['thread'],)
         response_json = {
@@ -188,7 +188,7 @@ def unsubscribe(request):
 @csrf_exempt
 def update(request):
     try:
-        parameters = request.POST.dict()
+        parameters = json.loads(request.body, encoding='utf-8')
         validate_required_parameters(parameters, ['message', 'slug', 'thread'])
 
         thread_queries.updateThread(parameters['thread'], parameters['slug'], parameters['message'])

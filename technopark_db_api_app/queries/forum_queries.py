@@ -154,12 +154,12 @@ def getThreadsList(short_name, since, order, limit, related):
             "users.email AS user "
             "FROM forums LEFT JOIN threads ON forums.id = threads.forum_id "
             "JOIN users ON threads.user_id = users.id "
-            "LEFT JOIN posts ON posts.thread_id = thread_id "
+            "LEFT JOIN posts ON posts.thread_id = threads.id "
             "WHERE forums.short_name= %r "
-            "GROUP BY forums.short_name, threads.slug "
             % str(short_name))
         if since:
             query += "AND threads.date >= %r " % str(since)
+        query += "GROUP BY forums.short_name, threads.slug "
         if order:
             query += "ORDER BY threads.date %s " % order
         if limit:

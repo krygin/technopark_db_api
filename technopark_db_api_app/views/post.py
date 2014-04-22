@@ -14,7 +14,7 @@ __author__ = 'Ivan'
 @csrf_exempt
 def create(request):
     try:
-        parameters = request.POST.dict()
+        parameters = json.loads(request.body, encoding='utf-8')
         validate_required_parameters(parameters, ['date', 'thread', 'message', 'user', 'forum'])
         validate_optional_parameters(parameters,
                                      ['parent', 'isApproved', 'isHighlighted', 'isEdited', 'isSpam', 'isDeleted'],
@@ -69,7 +69,7 @@ def details(request):
 @csrf_exempt
 def restore(request):
     try:
-        parameters = request.POST.dict()
+        parameters = json.loads(request.body, encoding='utf-8')
         validate_required_parameters(parameters, ['post'])
 
         post = post_queries.restorePost(parameters['post'])
@@ -88,7 +88,7 @@ def restore(request):
 @csrf_exempt
 def remove(request):
     try:
-        parameters = request.POST.dict()
+        parameters = json.loads(request.body, encoding='utf-8')
         validate_required_parameters(parameters, ['post'])
         post = post_queries.removePost(parameters['post'])
         response_json = {
@@ -106,7 +106,7 @@ def remove(request):
 @csrf_exempt
 def vote(request):
     try:
-        parameters = request.POST.dict()
+        parameters = json.loads(request.body, encoding='utf-8')
         validate_required_parameters(parameters, ['post', 'vote'])
         post = post_queries.votePost(parameters['post'], parameters['vote'])
         response_json = {
@@ -124,7 +124,7 @@ def vote(request):
 @csrf_exempt
 def update(request):
     try:
-        parameters = request.POST.dict()
+        parameters = json.loads(request.body, encoding='utf-8')
         validate_required_parameters(parameters, ['message', 'post'])
         post_queries.updatePost(parameters['post'], parameters['message'])
         post = post_queries.getDetailedPost(parameters['post'], [])

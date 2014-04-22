@@ -227,7 +227,7 @@ def updateUser(email, name, about):
     cursor = connection.cursor()
     try:
         cursor.execute("UPDATE users SET about=%s, name=%s WHERE email=%s",
-                       (email, name, about,))
+                       (about, name, email, ))
         connection.commit()
         cursor.close()
     except Exception:
@@ -305,10 +305,10 @@ def getThreadsList(email, since, order, limit):
             "JOIN users ON threads.user_id = users.id "
             "LEFT JOIN posts ON posts.thread_id = thread_id "
             "WHERE users.email=%r "
-            "GROUP BY forums.short_name, threads.slug "
             % str(email))
         if since:
             query += "AND threads.date >= %r " % str(since)
+        query += "GROUP BY forums.short_name, threads.slug "
         if order:
             query += "ORDER BY threads.date %s " % order
         if limit:

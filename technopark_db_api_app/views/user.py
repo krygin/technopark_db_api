@@ -12,9 +12,10 @@ __author__ = 'Ivan'
 @csrf_exempt
 def create(request):
     try:
-        parameters = request.POST.dict()
-        validate_required_parameters(parameters, ['email', 'username', 'name', 'about'])
-        validate_optional_parameters(parameters, ['isAnonymous'], [False])
+        parameters = json.loads(request.body, encoding='utf-8')
+        validate_required_parameters(parameters, ["email", "username", "name", "about"])
+
+        validate_optional_parameters(parameters, ["isAnonymous"], [False])
 
         user_queries.createUser(parameters['email'],
                                 parameters['username'],
@@ -55,7 +56,7 @@ def details(request):
 @csrf_exempt
 def follow(request):
     try:
-        parameters = request.POST.dict()
+        parameters = json.loads(request.body, encoding='utf-8')
         validate_required_parameters(parameters, ['follower', 'followee'])
         user_queries.followUser(parameters['follower'], parameters['followee'])
         user = user_queries.getDetailedUser(parameters['follower'])
@@ -118,7 +119,7 @@ def listFollowing(request):
 @csrf_exempt
 def unfollow(request):
     try:
-        parameters = request.POST.dict()
+        parameters = json.loads(request.body, encoding='utf-8')
         validate_required_parameters(parameters, ['follower', 'followee'])
         user_queries.unfollowUser(parameters['follower'], parameters['followee'])
         user = user_queries.getDetailedUser(parameters['follower'])
@@ -137,11 +138,11 @@ def unfollow(request):
 @csrf_exempt
 def updateProfile(request):
     try:
-        parameters = request.POST.dict()
+        parameters = json.loads(request.body, encoding='utf-8')
         validate_required_parameters(parameters, ['about', 'user', 'name'])
 
-        user_queries.updateUser(parameters['user', parameters['name'], parameters['about']])
-        user = user_queries.getDetailedUser(parameters['email'])
+        user_queries.updateUser(parameters['user'], parameters['name'], parameters['about'])
+        user = user_queries.getDetailedUser(parameters['user'])
 
         response_json = {
             'code': 0,

@@ -15,7 +15,7 @@ def addPost(forums_short_name, threads_id, user, message, date, parent, isApprov
                 "INSERT INTO posts (thread_id, message, date, user_id, isApproved, isHighlighted, isEdited, isSpam, isDeleted, post_id)"
                 "VALUES ((SELECT threads.id FROM threads JOIN forums ON threads.forum_id = forums.id WHERE forums.short_name = %s AND threads.id = %s), %s, %s, (SELECT id FROM users WHERE email=%s), %s, %s, %s, %s, %s, %s)""",
                 (forums_short_name, int(threads_id), message, date, user,
-                 bool(isApproved), bool(isDeleted), bool(isEdited), bool(isHighlighted), bool(isDeleted), parent,))
+                 bool(isApproved), bool(isHighlighted), bool(isEdited), bool(isSpam), bool(isDeleted), parent,))
             connection.commit()
         else:
             raise Exception("Post already exists")
@@ -173,9 +173,9 @@ def removePost(id):
 def votePost(id, vote):
     cursor = connection.cursor()
     try:
-        if vote == '1':
+        if vote == 1:
             cursor.execute("UPDATE posts SET likes = likes + 1 WHERE id = %s ", (id,))
-        elif vote == '-1':
+        elif vote == -1:
             cursor.execute("UPDATE posts SET dislikes = dislikes + 1 WHERE id = %s ", (id,))
         else:
             raise Exception("Wrong vote value")

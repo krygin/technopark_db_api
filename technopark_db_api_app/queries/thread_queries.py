@@ -191,9 +191,9 @@ def removeThread(id):
 def voteThread(id, vote):
     cursor = connection.cursor()
     try:
-        if vote == '1':
+        if vote == 1:
             cursor.execute("UPDATE threads SET likes = likes + 1 WHERE id = %s ", (id,))
-        elif vote == '-1':
+        elif vote == -1:
             cursor.execute("UPDATE threads SET dislikes = dislikes + 1 WHERE id = %s ", (id,))
         else:
             raise Exception("Wrong vote value")

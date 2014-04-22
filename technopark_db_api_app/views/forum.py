@@ -15,7 +15,7 @@ __author__ = 'Ivan'
 @csrf_exempt
 def create(request):
     try:
-        parameters = request.POST.dict()
+        parameters = json.loads(request.body, encoding='utf-8')
         validate_required_parameters(parameters, ['name', 'short_name', 'user'])
 
         forum_queries.addForum(parameters['name'], parameters['short_name'], parameters['user'])
